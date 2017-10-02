@@ -4,6 +4,9 @@ Steady Shallow Water Waves code repo
 
 # To do list
 ## short term
+
+Make github account for the lab?
+
 Indexing by column/row (matlab is column major)
 
 Median Filtering alternative
