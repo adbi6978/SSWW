@@ -19,14 +19,15 @@ dataim = adapthisteq(dataim,'clipLimit',0.02,'Distribution','rayleigh');
 tic
 [refimFilt,dataimFilt] = filterIMG(refim,dataim);
 
+dp = ones(1500,1500);
 for ii = 1:size(refim,2)
     dp(ii,:) = (1/2)*(-angle(ifft(fft(hilbert(refimFilt(ii,:)))))...
         + angle(ifft(fft(hilbert(dataimFilt(ii,:))))));
 end
 
 tol = pi;
-for ii = 1:size(refim,2)
-    for jj = 2:size(refim,2)
+for jj = 2:size(refim,2)
+    for ii = 1:size(refim,2)
         deltaDp = dp(ii,jj)-dp(ii,jj-1);
         if abs(deltaDp) >= 0.9*tol
             if deltaDp < 0
