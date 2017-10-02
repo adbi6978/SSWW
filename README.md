@@ -17,3 +17,5 @@ Data managment + storeage
 
 Ease of use
 -make a "how to run the code" document
+
+Automate image cropping
