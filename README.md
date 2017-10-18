@@ -18,7 +18,7 @@ transfrom is for making the 3D plot of the data image
 you can set the upper left point that you want the cropping region to start at with xmin and ymin.
 
 ## example: 
-obj = ftp_class('C:\Users\DHS\water-table\dispersive-hydrodynamics\IMG_0002b.CR2', 'C:\Users\DHS\water-table\dispersive-hydrodynamics\IMG_0001b.CR2');
+myObj = ftp_class('C:\Users\DHS\water-table\dispersive-hydrodynamics\IMG_0002b.CR2', 'C:\Users\DHS\water-table\dispersive-hydrodynamics\IMG_0001b.CR2');
 
 myObj.widthHeight = 1500;
 
