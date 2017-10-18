@@ -5,15 +5,13 @@ Steady Shallow Water Waves code repo
 # Running the Code 
 ftp_class is for making the object, and the inputs are the address fo the refrence and data images.
 
-myObj = ftp_class('address of the ref image', 'address of the data image');
+ftp_class('address of the ref image', 'address of the data image');
 
 widthHeight property is for setting the length that you want the square to have
 
-myObj.widthHeight = length_of_square
+widthHeight = length_of_square
 
 transfrom is for making the 3D plot of the data image
-
-myObj.transform();
 
 ## Optional parameters
 
