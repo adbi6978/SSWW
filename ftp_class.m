@@ -1,4 +1,4 @@
-%ftp as library fun
+%ftp as library fun t
 classdef ftp_class
     properties 
         dataim;
